@@ -149,6 +149,46 @@ This project taught me systematic debugging:
 | Empty files array | Method was POST, not GET | Changed HTTP method to GET |
 | No download links | Missing `dlink` field in response | Used `md5` + `fs_id` fields |
 | Proxy blocking | TeraBox blocks direct requests | Used original domain links |
+| CORS Errors | Missing `Access-Control-Allow-*` headers | Added CORS middleware to Express |
+| JSON parsing errors | Invalid API response format | Added try-catch and validation |
+| Undefined variables | Missing state initialization | Initialized state with default values |
+| Network timeout | API call taking too long | Added timeout handling (5s limit) |
+| Blank console | No debug logs | Added console.log() statements |
+| File names showing "Unknown" | API didn't return `server_filename` | Used `filename` field fallback |
+| Array index errors | Response structure mismatch | Added helper function getFiles() |
+| Frontend showing "#" links | No dlink field from API | Generated links from md5 hash |
+| 500 Server Error | Unhandled exceptions in backend | Added error handlers in routes |
+| ECONNREFUSED | Backend not running | Ensured backend starts first |
+| Module not found | Missing dependencies | Ran `npm install` |
+| Cannot find module 'axios' | axios not installed | Installed with `npm install axios` |
+| Cannot find module 'cors' | cors not installed | Installed with `npm install cors` |
+| "require is not defined" | Using ES6 imports incorrectly | Changed to `const express = require()` |
+| res.json is not a function | Response object corrupted | Checked middleware order |
+| Frontend connecting to wrong port | Hardcoded port mismatch | Changed to `localhost:4001` |
+| Fetch blocked by CORS | CORS not configured | Added CORS headers in backend |
+| Promise rejection unhandled | Missing .catch() | Added proper error handling |
+| Data structure changed | API response format differs | Added data normalization function |
+| File size showing bytes | Not formatting correctly | Added formatFileSize() function |
+| URL encoded incorrectly | Special characters in URL | Used encodeURIComponent() |
+| Too many API requests | Rate limiting triggered | Added delay between requests |
+| API response empty | Invalid TeraBox link | Added validation before API call |
+| Download link 404 | Generated link incorrect | Rechecked API response fields |
+| Memory leak | Not cleaning up event listeners | Added cleanup in useEffect |
+| State not updating | setState timing issue | Changed to functional setState |
+| useEffect running multiple times | Missing dependency array | Added proper deps array |
+| .env not loading | .env file not in backend root | Moved .env to correct location |
+| API key exposed | Key in GitHub commits | Added to .gitignore |
+| Package-lock conflicts | Merge conflicts in package-lock.json | Regenerated lock file |
+| npm start fails | Port already in use | Changed to port 4001 |
+| React warning: keys in list | Missing key props | Added unique key to map() |
+| React warning: setState in render | Updating state in render | Moved to useEffect hook |
+| Frontend lag | Too many rerenders | Optimized with useCallback |
+| Button click not registering | Event delegation issue | Changed from onClick to onChange |
+| Input value not updating | Controlled component issue | Added value and onChange handler |
+| Modal not closing | State not toggling | Fixed boolean state logic |
+| Scroll position jumping | useEffect dependency issue | Added scroll restoration |
+| Dark mode not persisting | localStorage not implemented | Added localStorage sync |
+| Mobile layout broken | CSS media queries missing | Added responsive design rules |
 
 ## 💡 Key Learnings
 
