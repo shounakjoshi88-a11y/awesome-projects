@@ -1,123 +1,36 @@
-# TeraSync Cloud ☁️
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-> Premium Link Generator & Downloader for TeraBox files
+## Getting Started
 
-## 🎯 Project Overview
+First, run the development server:
 
-TeraSync Cloud is a full-stack web application that allows users to extract file information from TeraBox sharing links and download files directly. Built with React (frontend) and Express.js (backend), it provides a seamless experience for managing TeraBox downloads.
-
-## ✨ Features
-
-✅ **Fast Link Processing** - Paste a TeraBox link and instantly get file details
-✅ **File Information Display** - See file names, sizes, and metadata
-✅ **Direct Download Links** - Get ready-to-use download links for all files
-✅ **Modern UI** - Clean, responsive interface built with React
-✅ **Real-time API Integration** - Uses TeraBox API via RapidAPI
-✅ **Error Handling** - Graceful error messages for invalid links
-
-## 🛠️ Tech Stack
-
-### Frontend
-- **React** - UI framework
-- **JavaScript/HTML/CSS** - Core web technologies
-- **Responsive Design** - Mobile-friendly interface
-
-### Backend
-- **Node.js** - Runtime environment
-- **Express.js** - Web framework
-- **RapidAPI** - TeraBox API integration
-- **Axios** - HTTP client for API calls
-
-## 📁 Project Structure
-
-```
-terasync-cloud/
-├── frontend/           # React application
-├── backend/            # Express.js server
-├── README.md           # This file
-```
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-- RapidAPI account with TeraBox API access
-
-### Installation
-
-#### 1. Backend Setup
 ```bash
-cd backend
-npm install
-
-# Create .env file with:
-API_HOST=pb068528-terabox-downloader-direct-download-link-generator.p.rapidapi.com
-API_KEY=your_rapidapi_key_here
-
-npm start
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-#### 2. Frontend Setup
-```bash
-cd frontend
-npm install
-npm start
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The application will be available at:
-- Frontend: `http://localhost:3000`
-- Backend: `http://localhost:4001`
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 📖 Usage
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-1. Open the TeraSync Cloud web app
-2. Paste a TeraBox sharing link
-3. Click "Generate Download Link"
-4. View the extracted files with names and sizes
-5. Click "Download" to access the sharing page
+## Learn More
 
-## 🔧 API Integration
+To learn more about Next.js, take a look at the following resources:
 
-### TeraBox API (via RapidAPI)
-- **Endpoint**: `/url` (GET method)
-- **Response**: File list with metadata (name, size, file ID, MD5 hash)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 🎓 Learning Journey
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-This project was built to practice:
-- Full-stack web development
-- RESTful API design
-- Frontend-backend integration
-- Error handling and debugging
-- Third-party API integration
-- React component development
-- Express.js middleware patterns
+## Deploy on Vercel
 
-## 🐛 Known Issues & Solutions
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Issue: 403 Errors from API
-**Solution**: Ensure RapidAPI host is correct
-
-### Issue: No download links appearing
-**Solution**: Check API response contains file metadata
-
-### Issue: Proxy download not working
-**Solution**: TeraBox blocks direct proxy requests; use original domain links
-
-## 🚧 Future Enhancements
-
-- [ ] Batch file downloads
-- [ ] File preview functionality
-- [ ] Download history tracking
-- [ ] User authentication
-- [ ] Direct file streaming
-- [ ] Mobile app version
-
-## 👤 Author
-
-**Shounak Joshi** - CSE Student | Full-Stack Developer
-
----
-
-**Built with ❤️ during my full-stack learning journey**
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
