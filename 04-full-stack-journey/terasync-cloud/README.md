@@ -4,6 +4,12 @@
 
 A full-stack web application that extracts file information from TeraBox sharing links and provides direct access to download files. Built with React (frontend), Express.js (backend), and RapidAPI integration.
 
+## 📸 Gallery & Preview
+
+| Main Interface | Upload & Processing |
+|---|---|
+| ![TeraSync Cloud Main Interface](./gallery/Screenshot%202025-12-25%20091103.png) | ![Upload & Processing View](./gallery/Screenshot%202025-12-25%20091137.png) |
+
 ## 🎯 Quick Overview
 
 | Aspect | Details |
