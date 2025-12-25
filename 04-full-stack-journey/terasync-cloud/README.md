@@ -248,7 +248,7 @@ This is my learning project. Feedback and suggestions are welcome!
 
 ## 👤 Author
 
-**Shounak Joshi** - CSE Student | Full-Stack Developer  
+**Shounak Joshi** - CSE Student | Full-Stack Learner  
 - 🎓 Learning full-stack development
 - 💻 Building projects that solve real problems
 - 📚 Sharing my learning journey
